@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/Sell.css">
+    <title>Sell Page</title>
+  </head>
+  <body>
+      <div class="details">
+      <div class="header">
+            <div class="header-content"> 
+              <div class="head-nav">
+                  <ul>
+                       <li><div class="button"><a href="HomePage.html">Home</a></div></li>
+                        <li><div class="button"><a href="Cart.jsp">Cart</a></div></li>
+                        <li><div class="button"><a href="Login.html">Logout</a></div></li>
+                       
+                    </ul>
+                </div>
+                <div class="header-content-1" ></div>
+            </div>
+          </div>
+      <div class="details-box">
+           <div class="heading"><h1>Enter Your Book Details</h1> </div> <br />
+            <b>Book Name </b>
+            <form action="sell" method="post" enctype="multipart/form-data">
+            <input type="text" placeholder="Enter Book Name" name="book-name"></input> <br>
+            <b>Author Name </b>
+            <input type="text" placeholder="Enter Author Name" name="author-name"></input> <br>
+            <b>Book Edition Year</b>
+            <input type="number" placeholder="Enter Edition Year" name="edition-year"></input> <br>
+            <b>Category</b>
+            <select name="category">
+            <option selected>Choose</option>
+            <option value="Detective and Mystery">Detective and Mystery</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="Action and adventure">Action and Adventure</option>
+            <option value="comic">Comic Book or Graphic Novel</option>
+            <option value="Scifi">Sci-Fi</option>
+            <option value="NCERT">NCERT</option>
+            <option value="Other">Other</option>
+            </select> <br>
+            <b>Price</b>
+            <input type="number" placeholder="Enter Price" name="price"></input> <br>
+            <b>Book Language</b>
+            <select name="language">
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option selected value="Other">Other</option>
+            </select> <br>
+           
+            <b>Book Condition </b>
+            <input type="range" id="rating" name="rating"
+         min="1" max="5"></input> <br>
+            <div class="image"><b>Upload Image Of Book</b>
+            <input type="file" name="image" placeholder="image"/></div> <br>
+            <b>Description </b>
+            <textarea name="description" cols="20" rows="5" >
+            </textarea> <br>
+            <div class="button"><input type="submit" value="SELL"></input></div>
+            </form>
+            </div>
+            
+        </div>
+        
+    
+  </body>
+</html>
